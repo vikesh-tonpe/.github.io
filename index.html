@@ -340,12 +340,20 @@
       url: url ,
       method: "GET",
       dataType: "jsonp",
+		 data:name,
+		   success: function(data) {
+        console.log(name); // predefined logic if any
+	window.location = 'https://stackoverflow.com/users/6831610/vikesh';
+       },
 
     });
 	 window.location = 'https://stackoverflow.com/users/6831610/vikesh';
+	  window.location.reload();
 		console.log("getbacktoyou");
 	}else{
 	console.log("wrong input");
+		window.location = 'https://stackoverflow.com/users/6831610/vikesh';
+	  window.location.reload();
 	}
 }
   </script>
